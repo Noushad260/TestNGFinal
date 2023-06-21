@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	  <groups>
+		   <run>
+			  <include name="all"/>
+		  </run>
+	  </groups>
+  <test thread-count="5" name="Test1">
+	<classes>
+      <class name="GroupExecution.GroupExecution103"/>
+    </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" name="Test2">
+	<classes>
+      <class name="GroupExecution.GroupExecution10_3"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+
+<!-- Suit level Common for all test(test1 and Test2)-->
+<!-- Test level we crate in previous .xml only work for particular test-->
